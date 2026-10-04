@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--масштаб-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">BEAUTY SHOP</a>
+        <!--меню-->
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О магазине</a>
+            <a href="cart.html">Корзина 🛒</a>
+            <a href="login.html" id="loginLink">Войти</a>
+            <a href="profile.html" id="profileLink" class="hidden">Профиль</a>
+        </nav>
+    </header>
+    <!--основное-->
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Косметика для тебя</h1>
+                <p>Уход за кожей, макияж и косметика в одном месте.</p>
+                <!--переход в каалог-->
+                <a href="catalog.html" class="button">Перейти в каталог</a>
+            </div>
+        </section>
+        <!--категории-->
+        <section class="section">
+            <h2>Категории</h2>
+            <div class="categories">
+                <div class="category">
+                    <h3>Уход за кожей</h3>
+                    <p>Кремы, сыворотки и маски</p>
+                </div>
+
+                <div class="category">
+                    <h3>Макияж</h3>
+                    <p>Помады, тушь и тональные средства</p>
+                </div>
+
+                <div class="category">
+                    <h3>Уход за волосами</h3>
+                    <p>Шампуни и средства для ухода</p>
+                </div>
+
+                <div class="category">
+                    <h3>Парфюмерия</h3>
+                    <p>Парфюмерная вода и мисты</p>
+                </div>
+
+                <div class="category">
+                    <h3>Уход за телом</h3>
+                    <p>Гели, крема и скрабы</p>
+                </div>
+            </div>
+        </section>
+
+        <!--поп товары-->
+        <section class="section">
+            <h2>Популярные товары</h2>
+            <!--джава добав товары-->
+            <div id="popularProducts" class="products"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Beauty Shop</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop - Корзина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            BEAUTY SHOP
+        </a>
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О магазине</a>
+            <a href="cart.html">Корзина 🛒</a>
+            <a href="login.html" id="loginLink">Войти</a>
+            <a href="profile.html" id="profileLink" class="hidden">Профиль</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h1>Корзина</h1>
+            <div id="cartProducts"></div>
+            <!--вся сумма-->
+            <div class="cart-total">
+                <h2>
+                    Итого:
+                    <span id="cartTotal">0</span> ₽
+                </h2>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2026 Beauty Shop</p>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

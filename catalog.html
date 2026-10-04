@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop - Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">BEAUTY SHOP</a>
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О магазине</a>
+            <a href="cart.html">Корзина 🛒</a>
+            <a href="login.html" id="loginLink">Войти</a>
+            <a href="profile.html" id="profileLink" class="hidden">Профиль</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h1>Каталог косметики</h1>
+            <!--поиск и фильтр-->
+            <div class="filters">
+                <!--поиск-->
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Поиск товара..."
+                >
+                <!--категор-->
+                <select id="categoryFilter">
+                    <option value="all">Все категории</option>
+                    <option value="Уход за кожей">Уход за кожей</option>
+                    <option value="Макияж">Макияж</option>
+                    <option value="Уход за волосами">Уход за волосами</option>
+                    <option value="Парфюмерия">Парфюмерия</option>
+                    <option value="Уход за телом">Уход за телом</option>
+                </select>
+
+                <!--фильтр-->
+                <select id="sortSelect">
+                    <option value="default">Сначала популярные</option>
+                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                </select>
+            </div>
+            <div id="catalogProducts" class="products"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Beauty Shop</p>
+    </footer>
+      <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop - Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            BEAUTY SHOP
+        </a>
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина 🛒</a>
+            <a href="login.html">Войти</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <div class="form-box">
+                <h1>Регистрация</h1>
+                <p>Создайте новый аккаунт</p>
+                <!--htubcрегистр-->
+                <form id="registerForm">
+                    <label for="name">Имя</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Введите имя"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Введите email"
+                        required
+                    >
+
+                    <label for="password">Пароль</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Введите пароль"
+                        required
+                    >
+                    <!--кнопка-->
+                    <button type="submit" class="button">Зарегистрироваться</button>
+                </form>
+
+                <!--вход-->
+                <p class="form-link">
+                    Уже есть аккаунт?
+                    <a href="login.html">Войти</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="js/auth.js"></script>
+</body>
+</html>
